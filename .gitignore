@@ -1,0 +1,37 @@
+# Visual Studio specific
+.vs/
+*.suo
+*.user
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Rider specific
+.idea/
+
+# User-specific files
+*.userosscache
+*.sln.metaproj
+
+# Build files
+*.csproj.user
+*.csproj.FileListAbsolute.txt
+
+# NuGet packages
+packages/
+*.nupkg
+
+# Secrets
+secrets.json
+appsettings.Development.json
+
+# Log files
+*.log
+
+# OS generated files
+# Windows
+Thumbs.db
+# macOS
+.DS_Store
