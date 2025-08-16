@@ -1,6 +1,6 @@
 namespace Prototype.Gateway.Services;
 
-public class GuestAuthService
+public class GuestAuthService : IGuestAuthService
 {
     public Task<string> Authenticate(string token)
     {

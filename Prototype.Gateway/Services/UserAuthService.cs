@@ -6,10 +6,10 @@ namespace Prototype.Gateway.Services;
 public class UserAuthService
 {
     private readonly IClusterClient _clusterClient;
-    private readonly GuestAuthService _guestAuthService;
-    private readonly SteamAuthService _steamAuthService;
+    private readonly IGuestAuthService _guestAuthService;
+    private readonly ISteamAuthService _steamAuthService;
 
-    public UserAuthService(IClusterClient clusterClient, GuestAuthService guestAuthService, SteamAuthService steamAuthService)
+    public UserAuthService(IClusterClient clusterClient, IGuestAuthService guestAuthService, ISteamAuthService steamAuthService)
     {
         _clusterClient = clusterClient;
         _guestAuthService = guestAuthService;

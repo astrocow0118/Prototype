@@ -10,8 +10,8 @@ builder.Services.AddControllers();
 builder.Services.AddHttpClient<SteamApiService>();
 
 // 인증 서비스를 등록합니다.
-builder.Services.AddSingleton<GuestAuthService>();
-builder.Services.AddSingleton<SteamAuthService>();
+builder.Services.AddSingleton<IGuestAuthService, GuestAuthService>();
+builder.Services.AddSingleton<ISteamAuthService, SteamAuthService>();
 builder.Services.AddSingleton<UserAuthService>();
 
 // Orleans 클라이언트를 설정합니다.

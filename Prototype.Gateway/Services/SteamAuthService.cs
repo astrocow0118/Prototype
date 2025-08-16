@@ -1,6 +1,6 @@
 namespace Prototype.Gateway.Services;
 
-public class SteamAuthService
+public class SteamAuthService : ISteamAuthService
 {
     private readonly SteamApiService _steamApiService;
 
